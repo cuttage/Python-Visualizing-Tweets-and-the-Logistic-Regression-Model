@@ -31,3 +31,6 @@ train_neg  = all_negative_tweets[:4000]
 train_x = train_pos + train_neg
 
 print("Number of tweets: ", len(train_x))
+
+data = pd.read_csv('./data/logistic_features.csv'); # Load a 3 columns csv file using pandas function
+data.head(10) # Print the first 10 data entries
