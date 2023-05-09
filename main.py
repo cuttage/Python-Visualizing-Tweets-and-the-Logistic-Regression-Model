@@ -41,3 +41,5 @@ Y = data['sentiment'].values; # Put in Y the corresponding labels or sentiments
 
 print(X.shape) # Print the shape of the X part
 print(X) # Print some rows of X
+
+theta = [6.03518871e-08, 5.38184972e-04, -5.58300168e-04]
