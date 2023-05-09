@@ -34,3 +34,10 @@ print("Number of tweets: ", len(train_x))
 
 data = pd.read_csv('./data/logistic_features.csv'); # Load a 3 columns csv file using pandas function
 data.head(10) # Print the first 10 data entries
+
+# Each feature is labeled as bias, positive and negative
+X = data[['bias', 'positive', 'negative']].values # Get only the numerical values of the dataframe
+Y = data['sentiment'].values; # Put in Y the corresponding labels or sentiments
+
+print(X.shape) # Print the shape of the X part
+print(X) # Print some rows of X
